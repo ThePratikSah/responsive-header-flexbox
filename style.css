@@ -10,7 +10,7 @@ body {
 
 header {
   display: flex;
-  height: 13vh;
+  height: 14vh;
   flex-direction: column;
   box-shadow: 0 2px 15px grey;
 }
@@ -21,6 +21,7 @@ header {
 }
 
 .logo {
+  margin-top: 1vh;
   justify-content: center;
 }
 
@@ -40,7 +41,7 @@ header {
   width: 90%;
   margin: auto;
   flex-direction: column;
-  min-height: 83vh;
+  min-height: 86vh;
 }
 
 .introduction {
@@ -95,6 +96,19 @@ header {
   width: 80%;
 }
 
+/* css for technology stack section */
+
+.tech-stack {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* css for scroll view */
 .wrapper {
   display: flex;
   max-height: 120px;
@@ -122,7 +136,7 @@ header {
 
 @media screen and (min-width: 600px) {
   header {
-    width: 90vw;
+    width: 80vw;
     height: 10vh;
     flex-direction: row;
     align-items: center;
@@ -135,14 +149,18 @@ header {
   }
   .logo {
     justify-content: start;
+    align-items: center;
   }
   .nav-links {
     margin-bottom: 0px;
     justify-content: space-around;
   }
   .presentation {
-    height: 90vh;
     flex-direction: row;
     align-items: center;
+    min-height: 90vh;
+  }
+  .tech-stack {
+    flex-direction: row;
   }
 }
