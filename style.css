@@ -45,19 +45,21 @@ header {
 }
 
 .introduction {
-  flex: 1;
+  flex: 2;
   text-align: center;
 }
 
 .intro-text h1 {
   font-size: 30px;
-  margin-top: 25px;
+  /* letter-spacing: 0.15em; */
+  /* margin-top: 25px; */
 }
 
 .intro-text p {
-  line-height: 1.3em;
+  /* line-height: 1.3em; */
+  /* letter-spacing: 0.1em; */
   font-size: 18px;
-  margin-top: 25px;
+  margin-top: 15px;
   color: #585772;
 }
 
@@ -65,18 +67,10 @@ header {
   padding: 20px 0px 0px 0px;
 }
 
-.cta-select {
-  border: 2px solid #ffc60a;
-  background: transparent;
-  color: #9e7900;
-  width: 120px;
-  height: 40px;
-  cursor: pointer;
-  margin: 0px 10px 0px 0px;
-}
-
 .cta-add {
-  color: black;
+  color: rgb(68, 68, 68);
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
   border: none;
   background: #ffc60a;
   width: 120px;
@@ -84,54 +78,54 @@ header {
   cursor: pointer;
 }
 
+.social-links {
+  margin-bottom: 2em;
+}
+
+.social-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #383838;
+}
+
 .cover {
   display: flex;
   justify-content: center;
-  flex: 1;
-  height: 60vh;
+  flex: 1vh;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .cover img {
-  width: 80%;
+  justify-content: center;
+  border-radius: 50%;
 }
 
-/* css for technology stack section */
+/* project section */
 
-.tech-stack {
+.project {
   display: flex;
-  width: 90%;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   flex-direction: column;
+  height: 100vh;
+  background-color: yellowgreen;
+  padding: 2em;
+  align-items: center;
 }
 
-/* css for scroll view */
-.wrapper {
+.project-item {
   display: flex;
-  max-height: 120px;
-  overflow-x: auto;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
-.wrapper::-webkit-scrollbar {
-  width: 0;
-}
-
-.product {
+.projects {
+  height: 100%;
+  margin: 20px;
+  align-items: center;
   justify-content: center;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.wrapper .item {
-  min-width: 110px;
-  height: 110px;
-  line-height: 110px;
-  text-align: center;
-  margin: 0px 12px;
-  background: #d6d3d3;
+  flex: 1;
+  background-color: gray;
 }
 
 @media screen and (min-width: 600px) {
@@ -160,7 +154,7 @@ header {
     align-items: center;
     min-height: 90vh;
   }
-  .tech-stack {
-    flex-direction: row;
+  .introduction {
+    text-align: left;
   }
 }
