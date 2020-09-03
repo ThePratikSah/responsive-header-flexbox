@@ -97,6 +97,10 @@ header {
   height: auto;
 }
 
+.card-title {
+  color: rgb(72, 72, 72);
+}
+
 li {
   list-style: none;
   font-family: 'Montserrat', sans-serif;
