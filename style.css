@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +12,7 @@ body {
 
 header {
   display: flex;
-  height: 14vh;
+  height: 12vh;
   flex-direction: column;
   box-shadow: 0 2px 15px grey;
 }
@@ -27,90 +29,163 @@ header {
 
 .nav-links {
   list-style: none;
-  justify-content: space-around;
-  margin-bottom: 1vh;
+  justify-content: space-evenly;
 }
 
 .link-item {
+  font-family: 'Montserrat', sans-serif;
   color: grey;
   text-decoration: none;
 }
 
-.presentation {
+.hero-content {
+  width: 100%;
   display: flex;
-  width: 90%;
-  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
   flex-direction: column;
-  min-height: 86vh;
 }
 
-.introduction {
-  flex: 2;
-  text-align: center;
-}
-
-.intro-text h1 {
-  font-size: 30px;
-  /* letter-spacing: 0.15em; */
-  /* margin-top: 25px; */
-}
-
-.intro-text p {
-  /* line-height: 1.3em; */
-  /* letter-spacing: 0.1em; */
-  font-size: 18px;
-  margin-top: 15px;
-  color: #585772;
-}
-
-.cta {
-  padding: 20px 0px 0px 0px;
-}
-
-.cta-add {
-  color: rgb(68, 68, 68);
-  font-weight: bold;
-  font-family: "Poppins", sans-serif;
-  border: none;
-  background: #ffc60a;
-  width: 120px;
-  height: 40px;
-  cursor: pointer;
-}
-
-.social-links {
-  margin-bottom: 2em;
-}
-
-.social-link {
-  cursor: pointer;
-  text-decoration: none;
-  color: #383838;
-}
-
-.cover {
-  display: flex;
-  justify-content: center;
-  flex: 1vh;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.cover img {
-  justify-content: center;
+.featured-img {
+  width: 80vw;
+  height: 80vw;
   border-radius: 50%;
 }
 
+.hero-text-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-para {
+  font-size: 30px;
+  margin: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-hire {
+  width: 40vw;
+  height: 5vh;
+  font-size: 22px;
+  margin: 0px auto;
+  border: none;
+  background-color: #f8c433; 
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+/* Skills section css code here */
+.skills-section {
+  height: 100vh;
+  background-color: rgb(244, 244, 244);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  color: #fff;
+  padding: 2rem;
+  background-color: #ecbb33;
+  border-radius: .5rem;
+  margin: 1rem;
+  width: 80%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Contact section */
+.contact-section {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  background-color: #ecbb33;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  padding: 10px;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: #fff;
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 5px rgb(158, 132, 27);
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input, textarea {
+  resize: none;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  margin-bottom: .4em;
+  border: 1px solid #ecbb33;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: .5rem;
+}
+
+/* footer code */
+.footer-section {
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 500px) {
+  .featured-img {
+    width: 60vw;
+    height: 60vw;
+  }
+  form {
+    width: 60%;
+  }
+}
+
+/* for desktop */
 @media screen and (min-width: 600px) {
   header {
-    width: 80vw;
+    width: 90vw;
     height: 10vh;
     flex-direction: row;
     align-items: center;
     margin: auto;
     box-shadow: none;
   }
-  .logo,
+  .logo {
+    flex: 2;
+  }
   .nav-links {
     flex: 1;
   }
@@ -120,14 +195,47 @@ header {
   }
   .nav-links {
     margin-bottom: 0px;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
-  .presentation {
+  .hero-content {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .featured-img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .hero-para {
+    margin: 30px 10px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hero-content {
+    margin: auto;
+    flex-direction: row-reverse;
+  }
+  .featured-img {
+    border-radius: 0%;
+    width: 30vw;
+    height: 30vw;
+  }
+  .hero-text-div {
+    text-align: start;
+    padding: 10px;
+  }
+  .hero-para {
+    margin: 30px 0px;
+  }
+  .btn-hire {
+    width: 15vw;
+    height: 6vh;
+    margin: 0;
+  }
+  .skills-section {
     flex-direction: row;
-    align-items: center;
-    min-height: 90vh;
-  }
-  .introduction {
-    text-align: left;
   }
 }

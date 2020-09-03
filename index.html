@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
+    <!-- navbar -->
     <header>
       <div class="logo">
         <a href="#">
@@ -20,78 +18,76 @@
       </div>
       <nav class="nav-links">
         <li><a href="/" class="link-item">Home</a></li>
-        <li><a href="projects.html" class="link-item">Projects</a></li>
-        <li><a href="#" class="link-item">About</a></li>
-        <li><a href="#" class="link-item">Contact</a></li>
+        <li><a href="#skills" class="link-item">Skills</a></li>
+        <li><a href="#contact" class="link-item">Contact</a></li>
       </nav>
     </header>
-    <main>
-      <section class="presentation">
-        <div class="cover">
-          <img
-            src="./img/pratik.jpg"
-            alt="Developer"
-            class="cover-img"
-            width="300px"
-          />
+
+    <!-- main content -->
+    <div class="hero-content">
+      <img class="featured-img" src="./img/pratik.jpg" alt="">
+      <div class="hero-text-div">
+        <p class="hero-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, blanditiis?</p>
+        <button class="btn-hire">Hire Me</button>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills" class="skills-section">
+      <div class="card">
+        <h3 class="card-title">Frontend Technologies</h3>
+        <div class="card-body">
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JS</li>
+            <li>jQurey</li>
+          </ul>
         </div>
-        <div class="introduction">
-          <div class="intro-text">
-            <h1>Hello I'm Pratik Sah</h1>
-            <p>
-              A proud Indian Full-Stack Web developer who loves coding and a
-              die-hard fan of Chelsea FC⚽.<br /><br />
-              I am a Computer Science Engineer, and you can connect with me on
-              LinkedIn.
-            </p>
-          </div>
-          <div class="cta">
-            <button class="cta-add">View My Work</button>
-          </div>
-          <br />
-          <div class="social-links">
-            <a
-              href="https://www.linkedin.com/in/pratiksah/"
-              class="social-link"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a
-              href="https://github.com/ThePratikSah"
-              class="social-link"
-              target="_blank"
-            >
-              <i class="fab fa-github-square fa-2x"></i>
-            </a>
-            <a
-              href="https://dribbble.com/pratiksah"
-              class="social-link"
-              target="_blank"
-            >
-              <i class="fab fa-dribbble-square fa-2x"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/the_pratik_sah/"
-              class="social-link"
-              target="_blank"
-            >
-              <i class="fab fa-instagram-square fa-2x"></i>
-            </a>
-            <a
-              href="https://twitter.com/the_pratik_sah"
-              class="social-link"
-              target="_blank"
-            >
-              <i class="fab fa-twitter-square fa-2x"></i>
-            </a>
-          </div>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Backend Technologies</h3>
+        <div class="card-body">
+          <ul>
+            <li>Node JS</li>
+            <li>Express JS</li>
+            <li>Python</li>
+            <li>PHP</li>
+          </ul>
         </div>
-      </section>
-    </main>
-    <script
-      src="https://kit.fontawesome.com/ad862d8e11.js"
-      crossorigin="anonymous"
-    ></script>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Database</h3>
+        <div class="card-body">
+          <ul>
+            <li>SQL</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>SQLite3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact form -->
+    <div id="contact" class="contact-section">
+      <div class="contact">
+        <h2 class="heading">Contact Us</h2>
+        <form action="">
+          <input type="text" name="name" id="name" placeholder="Name">
+          <input type="email" name="email" id="email" placeholder="Email">
+          <input type="tel" name="mobile" id="mobile" placeholder="Mobile number">
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+          <button type="submit" class="btn-hire">Hire Me</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="footer-section">
+      <p>Made with &hearts; by <a href="https://pratiksah.com" target="_blank">Pratik Sah</a></p>
+    </div>
+
   </body>
+
 </html>
